@@ -1,0 +1,4 @@
+interface:
+  display_name: "技术简历写作教练"
+  short_description: "逐段引导技术简历写作、事实核验、岗位定位与最终PDF制作"
+  default_prompt: "Use $write-impactful-tech-resume to coach me through one resume section at a time; do not draft content from scratch."
