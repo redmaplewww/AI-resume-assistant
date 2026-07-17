@@ -19,8 +19,8 @@ Score each dimension from 0 to 4. Report evidence for every score and prioritize
 | Technical depth | Technology names only | Some mechanisms | User need, constraints, decisions, mechanisms, and tradeoffs form a coherent chain |
 | Impact | Duties only | Some outcomes | Results are quantified or otherwise validated |
 | Metric integrity | Unsupported or contradictory | Plausible but underspecified | Baselines, units, conditions, and attribution are defensible |
-| Structure | Hard to scan | Generally readable | Clear hierarchy and coherent project themes |
-| Concision | Repetitive and dense | Minor redundancy | Every line earns its space |
+| Structure | Legacy template controls the story | Generally readable | User-designed hierarchy reflects target evidence and project importance |
+| Concision | Repetitive, generic, or mechanically uniform | Minor redundancy or model-like phrasing | Every line earns space and sounds individually defensible |
 | Consistency | Dates/terms/style conflict | Minor issues | Dates, tense, units, punctuation, and naming are consistent |
 | Interview defensibility | Claims invite credibility concerns | Most claims explainable | Every major claim supports a credible deep dive |
 
@@ -54,6 +54,9 @@ Before scoring credibility, read [anti-patterns.md](anti-patterns.md). Keep job 
 - Role portfolios that mix application, infrastructure, and algorithm claims without a dominant hiring thesis.
 - Improvements measured against an unusable zero baseline rather than a fair comparison or defined final attainment.
 - Final text that cannot be traced to user-written content or a user-confirmed local edit.
+- A new resume that preserves the old section order, project grouping, or bullet boundaries without an explicit reason.
+- Repeated cadence, identical subheadings, uniform bullet length, or the same problem-solution-result template across projects.
+- Generic abstraction and JD keyword stitching that erase the user's technical vocabulary and distinctive incidents.
 
 Classify these as signals, not automatic proof. Escalate to high risk only under the evidence standard in [anti-patterns.md](anti-patterns.md).
 
@@ -68,3 +71,5 @@ Classify these as signals, not automatic proof. Escalate to high risk only under
 7. Check that the document is ATS-readable: simple headings, selectable text, no critical content in images, and no reliance on icons alone.
 8. Generate interview probes for the three strongest bullets; weaken or qualify any claim the candidate cannot defend.
 9. Verify authorship provenance for every final line before PDF generation.
+10. Verify the user designed the reconstructed framework and that no legacy structure was inherited by default.
+11. Read representative lines aloud; return wording the user would not naturally explain to the coaching loop.

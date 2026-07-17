@@ -1,6 +1,6 @@
 # Coaching prompts for technical resume writing
 
-Use this reference to diagnose and locally revise text the user has already written. Never turn these patterns into a first draft or fill them from raw facts.
+Use this reference to diagnose and locally revise text the user has newly written for the reconstructed resume. Old-resume wording is source material, not an eligible draft, unless the user explicitly chooses and reconfirms it. Never turn these patterns into a first draft or fill them from raw facts.
 
 ## Table of contents
 
@@ -21,7 +21,7 @@ Work on one user-written line at a time:
 4. Make the smallest revision that incorporates confirmed evidence.
 5. Explain the change and request confirmation.
 
-Do not replace the user's voice with a standard formula. Do not add a second achievement merely because the line looks short.
+Do not replace the user's voice with a standard formula. Do not add a second achievement merely because the line looks short. Read [reconstruction-and-voice.md](reconstruction-and-voice.md) when the new text follows the old framework or sounds mechanically generated.
 
 ## Project-positioning prompts
 

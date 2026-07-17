@@ -1,6 +1,6 @@
 # Project narrative and role positioning
 
-Use this guide when the resume describes Agent, RAG, platform, framework, or other architecture-heavy work. Use its examples only to diagnose structure and formulate questions. Never copy them into a candidate's resume or draft project prose from raw facts; require the user to write the first version and revise it locally.
+Use this guide when the reconstructed resume describes Agent, RAG, platform, framework, or other architecture-heavy work. Extract project facts from the old resume without preserving its project title, bullet order, or categories. Use examples only to diagnose and formulate questions. Never copy them into candidate prose; require the user to write the new project framing and first version.
 
 ## Table of contents
 

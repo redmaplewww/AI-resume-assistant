@@ -257,6 +257,18 @@ Low-severity but consequential patterns:
 
 Repair directly. Do not equate email domain, photo style, or template choice with technical ability.
 
+### Legacy-frame lock-in
+
+Signal: a supposed rewrite preserves the old section order, project grouping, bullet boundaries, and space allocation, changing only wording.
+
+This keeps the old resume's strategic mistakes and encourages line-by-line model polishing. Treat the old document as a fact source: atomize evidence, then require the user to design a new framework independently. Read [reconstruction-and-voice.md](reconstruction-and-voice.md).
+
+### Mechanically generated voice
+
+Signals include identical subheadings across projects, repeated cadence, uniform bullet length, keyword stitching, abstract corporate language, and every bullet forced into a perfect problem-solution-result loop.
+
+Do not call this proof of AI authorship. Return it as a voice and distinctiveness problem. Ask the user to explain the work naturally, restore project-specific details, and rewrite the affected line themselves before any local edit.
+
 ## Repair protocol
 
 For each issue:

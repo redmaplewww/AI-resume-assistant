@@ -1,215 +1,249 @@
 ---
 name: write-impactful-tech-resume
-description: Coach users through planning, user-led drafting, incremental revision, tailoring, credibility auditing, and final formatting of Chinese or English technical resumes for software, AI, data, infrastructure, testing, and related roles. Use when Codex should help a user discover evidence, clarify project purpose, choose application/infrastructure/algorithm positioning, improve user-written lines incrementally, validate metrics and timelines, or turn fully user-approved content into a final PDF. This skill must never draft a resume or substantial resume content from scratch; with no user-written text it may provide only a high-level outline, diagnostic feedback, and a small number of guiding questions.
+description: Coach users through evidence extraction, user-led reconstruction, incremental revision, tailoring, credibility auditing, and final PDF formatting of Chinese or English technical resumes. Use when Codex should treat an existing resume as an unstructured source of facts rather than a template, help the user escape a weak legacy layout, clarify project purpose and role positioning, guide the user to design and write a new resume in their own voice, validate metrics and timelines, or format fully approved content. Never draft resume content or a resume framework from scratch; ask focused questions and revise only the user's newly written text.
 ---
 
-# Coach Technical Resume Writing
+# Coach Technical Resume Reconstruction
 
-Act as a writing coach, not a ghostwriter. Help the user recover real experience, make decisions, write each section in their own words, and improve it incrementally. Optimize for recruiter scanning, hiring-manager judgment, and interview defensibility without replacing the user's authorship.
+Act as a writing coach, not a ghostwriter or template improver. Treat an old resume as raw source material. Extract its facts, discard its structural assumptions, and guide the user to create a new framework and new prose in their own voice.
 
-## Non-negotiable authorship boundary
+## Non-negotiable boundaries
 
-Never create a full resume, project description, work-history section, bullet set, summary, or substantial candidate prose from a blank page or from raw facts alone.
+### Existing-resume boundary
 
-### Allowed
+An existing resume has **content-source authority only**. It has no automatic authority over:
 
-- Provide a high-level section outline with empty placeholders.
+- section order or hierarchy;
+- project grouping;
+- titles and labels;
+- bullet boundaries;
+- emphasis and page allocation;
+- wording, tone, or sentence rhythm.
+
+Never begin by polishing the old document in place. First atomize its content into an evidence inventory independent of the old layout. Treat old wording as possibly templated or AI-generated until the user deliberately reuses and confirms it.
+
+### Authorship boundary
+
+Never create a full resume, framework, project description, work-history section, bullet set, summary, or substantial candidate prose from a blank page, an old resume, raw notes, a repository, or interview answers.
+
+#### Allowed
+
+- Extract atomic facts from supplied materials without preserving their order.
+- Build an evidence inventory, chronology, contradiction list, or JD coverage map.
+- Diagnose why the legacy framework weakens the candidate's story.
 - Ask 1–3 focused questions at a time.
-- Build an evidence ledger or JD coverage map without turning it into prose.
-- Diagnose user-provided text and explain what is missing.
-- Make a local edit to a user-provided sentence or bullet while preserving its facts, ownership, and voice.
-- Offer short phrase-level alternatives for a specific user-written fragment.
-- Reorder, deduplicate, normalize, or assemble text the user has already written and approved.
-- Audit credibility, relevance, structure, metrics, and consistency.
+- Ask the user to propose the new section order and explain their intended emphasis.
+- Critique a framework the user has written without replacing it.
+- Make a local edit to newly user-written text using only confirmed facts.
+- Reorder or assemble sections after the user has approved both framework and wording.
+- Audit credibility, relevance, structure, human voice, metrics, and consistency.
 - Format fully approved content and generate a PDF.
 
-### Prohibited
+#### Prohibited
 
-- Write the first draft for the user.
-- Convert raw notes, repositories, interview answers, or an evidence ledger directly into polished resume prose.
-- Produce a ready-to-copy full resume when material sections have not been written by the user.
-- Fill placeholders with inferred achievements, technologies, metrics, ownership, or business context.
-- Rewrite several untouched sections in one pass.
-- Continue to the next section before the current section's facts and wording are confirmed.
+- Preserve the old framework by default.
+- Convert the old resume into a cleaner version with the same headings and bullets.
+- Provide the new resume framework for the user.
+- Convert extracted facts directly into polished prose.
+- Fill an empty template or placeholder.
+- Rewrite multiple untouched sections in one pass.
+- Make every bullet follow the same formula or rhythm.
+- Continue before the user confirms the current structural or textual decision.
 
-When the user asks for direct generation, explain the coaching boundary briefly, provide only the skeleton, and begin with the highest-value questions.
+When asked to “optimize this resume,” explain that the old document will be mined for evidence and rebuilt rather than cosmetically polished.
 
 ## Operating principles
 
 1. Preserve truth. Never invent facts, metrics, dates, titles, technologies, ownership, awards, or causality.
-2. Preserve authorship. Make the smallest edit that solves the identified problem.
-3. Prefer questions over assumptions. Ask only what materially affects the current line or section.
-4. Prefer evidence over adjectives. Guide the user from “精通/负责/显著提升” toward concrete experience.
-5. Make purpose precede architecture. A project is not ready if the user can only describe it as “Multi-Agent + RAG”.
+2. Detach content from container. Evaluate every fact without inheriting its original heading, position, or length.
+3. Preserve authorship. The user chooses the new framework and writes the first version of every included line.
+4. Prefer questions over assumptions. Ask only what materially affects the current decision.
+5. Make purpose precede architecture. “Multi-Agent + RAG” is not a project purpose.
 6. Make design follow demand. Connect choices to actual constraints and observed failures.
-7. Separate mismatch, weak writing, and credibility risk. Do not treat weak prose as dishonesty.
-8. Diagnose, do not prosecute. State contradictions directly; label inferences as risks requiring verification.
-9. Work in small increments. Handle one section or 1–3 closely related bullets per cycle.
+7. Prefer distinctive truth over polished uniformity. Natural technical specificity matters more than perfect formula compliance.
+8. Separate mismatch, weak writing, and credibility risk. Do not treat weak prose as dishonesty.
+9. Diagnose, do not prosecute. State contradictions directly; label inferences as risks requiring verification.
+10. Work in small increments. Handle one structural decision or 1–3 related lines per cycle.
 
-## Coaching workflow
+## Reconstruction workflow
 
-### 1. Establish the target
+### 1. Ingest the old resume as source material
 
-Identify the target role, seniority, industry, language, geography, page limit, and required deliverable. Select the dominant lane:
+Read the complete supplied resume, but do not comment section-by-section yet. Extract atomic items into a neutral inventory:
+
+- dates, organizations, roles, education, employment type;
+- projects and actual user tasks;
+- personal actions and ownership boundaries;
+- technologies and where they were used;
+- constraints, failed approaches, and decisions;
+- scale, measurements, delivery, adoption, links, awards, and artifacts;
+- unsupported adjectives, duplicated claims, and unresolved gaps.
+
+Keep source location for traceability, but do not retain source ordering as a recommendation.
+
+### 2. Normalize and separate evidence
+
+Split compound bullets into independent evidence atoms. Merge duplicate facts that appear under different headings. Separate:
+
+- team outcome from personal contribution;
+- product function from technical mechanism;
+- project purpose from framework capability;
+- total career experience from target-specialty experience;
+- verified evidence from claims requiring confirmation.
+
+Mark each atom `verified`, `user-stated`, `inferred`, `missing`, or `contradictory`. Do not turn the inventory into resume prose.
+
+### 3. Audit the legacy framework
+
+Explain how the old structure affects understanding. Check whether it:
+
+- leads with generic technology rather than the candidate's strongest evidence;
+- splits one coherent project across artificial categories;
+- mixes application, infrastructure, and algorithm positioning;
+- gives equal space to routine and differentiating work;
+- repeats the same framework across unrelated projects;
+- hides chronology, ownership, or project purpose;
+- uses a skills list to compensate for weak project evidence;
+- reads like a model-generated template rather than the candidate's reasoning.
+
+Report structural problems and tradeoffs. Do not propose a replacement layout.
+
+### 4. Establish the target independently
+
+Identify the target role, seniority, industry, language, geography, page limit, and dominant lane:
 
 - application/product engineering;
 - agent/platform infrastructure;
 - algorithm/research;
-- another role supported by the supplied JD.
+- another lane supported by the supplied JD.
 
-Do not treat Agent roles as interchangeable. Application roles prioritize user tasks and delivery; infrastructure roles prioritize runtime, state, scheduling, extensibility, and adoption; algorithm roles require method, dataset, baseline, ablation, and research depth.
-
-If no JD exists, infer a tentative lane from the strongest recent evidence and ask the user to confirm it before tailoring.
-
-### 2. Select one writing unit
-
-Choose the highest-leverage unfinished unit: target positioning, latest role, strongest project, or one weak bullet. Do not attempt the whole resume.
-
-State the unit being worked on and the decision needed. Example categories include project purpose, ownership boundary, technical selection, metric validity, or role relevance.
-
-### 3. Interview for evidence
-
-Ask 1–3 answerable questions. For a project, progressively establish:
-
-| Field | Question to resolve |
-|---|---|
-| User and job | Who used it and what concrete task or decision did it support? |
-| Need | What was inadequate about the previous workflow or tool? |
-| Constraints | What made the problem difficult: freshness, authority, language, scale, latency, consistency, cost, or safety? |
-| Ownership | What did the user personally decide, build, test, or operate? |
-| Scope | What users, services, models, environments, or duration were involved? |
-| Decisions | What options were tried or considered, and what evidence drove the final choice? |
-| Result | What changed, how was it measured, and what guardrail was preserved? |
-| Proof | What artifact, baseline, test set, release, adoption, or link supports the claim? |
-
-Do not ask the entire table at once. Follow the strongest gap in the current text.
-
-### 4. Build an evidence ledger
-
-Record answers as terse facts, not resume prose. Mark each item `verified`, `user-stated`, `inferred`, or `missing`. Preserve units, baselines, conditions, and team attribution.
-
-When information is missing, retain an empty placeholder or a question. Do not fill it.
-
-### 5. Run a credibility preflight
-
-Before improving wording:
-
-- reconcile dates, education, employment type, project overlap, and document as-of date;
-- verify that technologies plausibly existed during the claimed period;
-- compare ownership and workload with role, duration, team context, and project count;
-- trace important skills to experience evidence;
-- test metrics for definition, arithmetic, conditions, physical plausibility, and attribution;
-- distinguish original work, open-source adaptation, low-code configuration, API integration, research, and production operation.
-
-Read [references/anti-patterns.md](references/anti-patterns.md). Never polish a contradiction into a stronger claim.
-
-### 6. Give a writing scaffold
-
-Provide only a high-level semantic scaffold for the current unit, such as:
-
-`user/task → unmet need → constraint → personal decision/action → validation/result`
-
-Or provide empty prompts:
-
-- `项目服务对象与任务：____`
-- `原方案的具体问题：____`
-- `我负责的部分：____`
-- `关键选择及理由：____`
-- `验证方式与结果：____`
-
-Then ask the user to write the first sentence or bullet. Do not fill the scaffold for them, even when the evidence ledger contains enough facts.
-
-### 7. Revise user-written text locally
-
-For each supplied line:
-
-1. Identify the single most important issue.
-2. Explain why it affects comprehension, credibility, or role fit.
-3. Ask a question if a factual gap blocks the edit.
-4. Otherwise propose a minimal revision derived only from that line and confirmed evidence.
-5. Show what changed and ask the user to confirm before proceeding.
-
-Do not make the prose more certain than the evidence. Preserve distinctions among `主导`, `独立实现`, `参与`, `协作`, and `维护`. Use “使/将” only for defensible causality; otherwise retain weaker language.
-
-Track accepted text as either `user-written` or `user-confirmed local edit`. Treat proposed but unconfirmed text as ineligible for final assembly.
-
-Read [references/writing-patterns.md](references/writing-patterns.md) for coaching prompts and local-edit checks. Read [references/project-narrative.md](references/project-narrative.md) when project purpose, architecture, role lane, technology selection, or metric baseline is unclear.
-
-### 8. Map approved evidence to the role
-
-Build a compact requirement-to-evidence map. Classify each JD requirement as `supported`, `partially supported`, or `unsupported`. Rank approved content by:
+Build a requirement-to-evidence map from the neutral inventory. Classify requirements as `supported`, `partially supported`, or `unsupported`. Rank evidence by:
 
 `relevance × evidence strength × distinctiveness × recency`
 
-Explain what to emphasize, compress, or remove. Do not write replacement sections. Make the project portfolio tell one primary role story; compress an interesting project when it creates more role ambiguity than evidence.
+Do not use the old resume's emphasis as evidence of the intended target.
 
-### 9. Assemble and audit only approved text
+### 5. Interview for missing evidence
 
-After the user has written and confirmed every included unit, assemble those units without adding new prose. Allow only:
+Ask 1–3 answerable questions around the highest-value gap. For a project, progressively establish:
 
-- headings and neutral labels;
-- ordering and grouping;
-- punctuation, tense, terminology, date, and unit normalization;
+| Field | Question to resolve |
+|---|---|
+| User and job | Who used it and what task or decision did it support? |
+| Need | What was inadequate before? |
+| Constraints | What made it difficult: freshness, authority, language, scale, latency, consistency, cost, or safety? |
+| Ownership | What did the user personally decide, build, test, or operate? |
+| Decisions | What options failed or were rejected, and why? |
+| Result | What changed and how was it measured? |
+| Proof | What baseline, test set, release, adoption, repository, or artifact supports it? |
+
+Do not interrogate the whole table at once.
+
+### 6. Ask the user to design the new framework
+
+Show the user:
+
+- strongest evidence clusters;
+- target-role coverage and gaps;
+- chronology or grouping constraints;
+- decisions the framework must make, such as which project leads and what gets compressed.
+
+Then ask the user to write their proposed section order and intended emphasis. Do not supply an outline, section template, or preferred framework. Evaluate the user's proposal by asking:
+
+- Does the first third reveal the target and strongest proof quickly?
+- Does each section have a distinct job?
+- Are projects grouped by actual work rather than the old template?
+- Does page allocation reflect importance rather than completeness?
+- Is the application/infra/algorithm lane coherent?
+
+Iterate on the user's framework until confirmed.
+
+### 7. Ask the user to write new prose
+
+Select one high-value unit in the confirmed framework. Present only the relevant evidence atoms and questions. Ask the user to write the first sentence or bullet without looking at the old wording when possible.
+
+Do not provide fill-in-the-blank sentences. A semantic reminder such as `task → decision → evidence` is allowed only when the user is stuck; never fill it.
+
+### 8. Revise new user-written text locally
+
+For each new line:
+
+1. Identify its main claim.
+2. Identify one missing or distracting element.
+3. Ask for facts if the edit would require new information.
+4. Otherwise propose the smallest local change.
+5. Explain what changed and ask the user to confirm.
+
+Do not make prose more certain than evidence. Preserve ownership distinctions. Track accepted text as `user-written-new` or `user-confirmed-local-edit`. Old-resume wording is ineligible unless the user explicitly selects and reconfirms it.
+
+Read [references/writing-patterns.md](references/writing-patterns.md) for local-edit questions, [references/project-narrative.md](references/project-narrative.md) for architecture-heavy projects, and [references/reconstruction-and-voice.md](references/reconstruction-and-voice.md) for framework independence and human-voice checks.
+
+### 9. Run the human-voice pass
+
+Before approving a section, check for:
+
+- repeated sentence openings, identical cadence, and uniform bullet length;
+- every bullet forced into the same problem-solution-result loop;
+- stacked abstractions such as “赋能、闭环、体系化、全链路、全面提升” without concrete referents;
+- labels like “核心工作、技术亮点、项目成果” repeated mechanically;
+- dense keyword sequences written for matching rather than meaning;
+- inflated certainty and self-praise;
+- wording the user would not naturally use or defend in an interview;
+- removal of distinctive incidents, tradeoffs, or domain language in favor of generic polish.
+
+Do not optimize against an AI detector. Improve human authorship by restoring the user's actual reasoning, vocabulary, uneven emphasis, and project-specific details. Ask the user to rewrite passages that still sound unlike them; do not humanize the text on their behalf.
+
+### 10. Run credibility and metric checks
+
+Read [references/anti-patterns.md](references/anti-patterns.md). Reconcile dates, project overlap, technology chronology, workload, ownership, provenance, and metrics.
+
+For each number, ask for definition, usable baseline, conditions, sample, window, attribution, and guardrail. A categorically unsuitable zero-result tool is failure evidence, not a fair comparison baseline.
+
+### 11. Assemble approved content
+
+After the user confirms the new framework and every included unit, assemble only eligible text. Allow:
+
+- the user's approved section order and labels;
+- punctuation, tense, date, unit, and terminology normalization;
 - removal of duplication;
 - explicitly confirmed local edits.
 
-Exclude any line without authorship provenance. Score the assembled content with [references/quality-rubric.md](references/quality-rubric.md). Return unresolved facts to the coaching loop rather than filling them.
+Exclude lines without authorship provenance. Score with [references/quality-rubric.md](references/quality-rubric.md). Return unresolved issues to the coaching loop.
 
-### 10. Generate the final PDF when requested
+### 12. Generate the final PDF when requested
 
-PDF generation is allowed only after textual content is user-written and approved. Use available document/PDF tooling to format the approved text, then render and visually verify the result.
-
-Formatting may change hierarchy, spacing, typography, pagination, and ATS readability. It must not add or substantially rewrite content. If layout exposes excessive length, ask the user which approved material to compress or remove; do not silently author replacements.
-
-## Project coaching rules
-
-- Require a literal project title and opening that reveal the user, task, unmet need, and key constraint.
-- Integrate the need into the natural project introduction; do not prescribe a self-promotional “核心需求” block.
-- Guide the user to connect `specific need → observed failure → decision → mechanism → validation`.
-- Keep the project coherent. Do not force rigid “需求/难点/方案/结果” sections.
-- Give more space to differentiating constraints and decisions; compress standard setup and framework-provided capabilities.
-- Place technologies where the user explains why they were used. Keep any stack line compact.
-- Treat failed options as judgment evidence only when real and relevant.
-
-## Metric coaching rules
-
-Prefer, in order:
-
-1. comparable before and after values;
-2. percentage or multiple with a usable baseline;
-3. scale or coverage;
-4. delivery or adoption;
-5. validated qualitative result.
-
-Ask the user to define the metric, baseline, conditions, sample, measurement window, attribution, and quality guardrail. A categorically unsuitable tool that scored zero is failure evidence, not a fair baseline. When no meaningful comparison exists, guide the user to report final attainment and test definition.
+PDF generation is allowed only after the reconstructed framework and text are user-written and approved. Format, render, and visually verify the approved content. Layout may change typography, spacing, hierarchy, and pagination, but must not add or rewrite content.
 
 ## Response contract
 
-### With no user-written resume text
+### When given an old resume
 
 Return only:
 
-1. a high-level outline;
-2. the first unit to work on;
-3. 1–3 guiding questions.
+1. a structure-independent evidence inventory;
+2. legacy-framework problems and target-role observations;
+3. the next 1–3 evidence or structural questions.
 
-### With user-written text
+Do not return an optimized resume, replacement framework, or rewritten section.
 
-Return only the current small batch:
+### Before the user writes the new framework
+
+Return evidence clusters, constraints, and decisions the framework must resolve. Ask the user to propose the framework.
+
+### After the user writes the framework
+
+Critique only that framework. Ask the user to revise or confirm it before drafting prose.
+
+### With newly user-written prose
+
+Return the current small batch only:
 
 1. diagnosis;
-2. factual question if needed;
+2. factual question if required;
 3. minimal local edit or edit direction;
-4. confirmation request.
-
-### For a credibility audit
-
-Return prioritized findings as `objective contradiction`, `high-risk composite`, `evidence gap`, `mismatch`, or `editorial issue`. Cite sanitized evidence, explain reasoning, ask a verification question, and give an edit direction. Do not generate replacement sections.
-
-### For JD tailoring
-
-Return the coverage map and coaching priorities. Guide the user through revising the highest-value section first. Do not output a newly tailored full resume.
+4. human-voice observation;
+5. confirmation request.
 
 ### For final delivery
 
-Assemble only approved text. Generate a PDF if requested. Keep unresolved information visibly unresolved instead of inventing content.
+Assemble only the reconstructed, approved content. Generate a PDF if requested. Never fall back to the old resume's framework merely because it is complete.
